@@ -1,0 +1,114 @@
+/* src/Carousel.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%; /* Set the width of the container */
+    max-width: 800px; /* Optional: maximum width */
+}
+
+.image-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.add-button {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the carousel */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+}
+
+.carousel img {
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:disabled {
+    background: #ccc; /* Gray out disabled buttons */
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is on top */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 1; /* Ensure it is on top of the overlay */
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* Ensure it is above everything else */
+}
