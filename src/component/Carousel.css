@@ -1,3 +1,4 @@
+
 /* src/Carousel.css */
 body {
     font-family: Arial, sans-serif;
@@ -42,6 +43,7 @@ body {
     justify-content: center; /* Center the carousel */
     overflow: hidden;
     position: relative;
+    width: 100%; /* Make carousel full width */
 }
 
 .carousel-images {
@@ -49,9 +51,9 @@ body {
 }
 
 .carousel img {
-    width: 100px;
+    width: 150px; /* Increased image size */
     height: auto;
-    margin: 0 5px;
+    margin: 0 10px; /* Increased margin for better spacing */
     cursor: pointer;
 }
 
@@ -112,3 +114,4 @@ body {
     cursor: pointer;
     z-index: 2; /* Ensure it is above everything else */
 }
+
